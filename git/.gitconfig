@@ -1,0 +1,5 @@
+[user]
+	name = Audrius Mecionis
+	email = audrius.mecionis@gmail.com
+[core]
+	excludesfile = /home/amecioni/.gitignore
