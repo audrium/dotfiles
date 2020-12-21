@@ -1,5 +1,5 @@
 # dotfiles
-Audrius dotfiles
+Audrius minimalistic dotfiles
 
 - Clone this repo
     ```
@@ -9,7 +9,7 @@ Audrius dotfiles
 
 - Install needed packages
     ```
-    sudo apt install guake vim zsh
+    sudo apt install guake vim zsh code
     ```
 
 - Install zsh plugin manager antibody
@@ -19,10 +19,16 @@ Audrius dotfiles
 
 - Create symlinks for needed packages
     ```
-    stow git vim zsh
+    stow git vim zsh vscode
     ```
 
 - Load guake settings
     ```
     guake --restore-preferences guake/prefs.guake
     ```
+
+- Install vscode extensions
+    ```
+    cat vscode_extensions | xargs -L 1 code --install-extension
+    ```
+

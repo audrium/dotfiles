@@ -16,3 +16,5 @@ antibody bundle sindresorhus/pure
 alias l="ls -lha --color"
 alias ll="ls -lh --color"
 
+# colors
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#00afff"

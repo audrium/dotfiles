@@ -2,4 +2,5 @@
 	name = Audrius Mecionis
 	email = audrius.mecionis@gmail.com
 [core]
-	excludesfile = /home/amecioni/.gitignore
+	excludesfile = $HOME/.dotfiles/.gitignore
+	editor = vim

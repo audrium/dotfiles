@@ -1,0 +1,33 @@
+{
+    "window.zoomLevel": 0,
+    "workbench.iconTheme": "material-icon-theme",
+    "python.formatting.provider": "black",
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "terminal.integrated.fontSize": 13,
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.python"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[yaml]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "cornflakes.linter.executablePath": "/home/amecioni/.virtualenvs/reana/lib/python3.8/site-packages/flake8",
+    "files.trimTrailingWhitespace": true,
+    "files.trimFinalNewlines": true,
+    "editor.fontSize": 13,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "workbench.colorTheme": "Atom One Dark",
+    "files.exclude": {
+        "**/node_modules/**": true
+    },
+    "workbench.editorAssociations": [
+        {
+            "viewType": "jupyter.notebook.ipynb",
+            "filenamePattern": "*.ipynb"
+        }
+    ]
+}
