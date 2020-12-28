@@ -13,8 +13,8 @@ autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
 " Init vim-plug
 call plug#begin()
 
-" One dark theme
-Plug 'joshdick/onedark.vim'
+" Monokai theme
+Plug 'sickill/vim-monokai'
 
 " Intellisense
 Plug 'neoclide/coc.nvim'
@@ -33,9 +33,9 @@ Plug 'vim-airline/vim-airline-themes'
 
 call plug#end()
 
-" Set One dark theme
+" Set Monokai theme
 syntax on
-colorscheme onedark
+colorscheme monokai
 
 " Open NerdTree by default
 " autocmd VimEnter * NERDTree
@@ -50,3 +50,8 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 " Flash instead of beep
 set visualbell
 
+" Reduce updatetime for faster GitGutter response
+set updatetime=100
+
+" Display line numbers
+set number
