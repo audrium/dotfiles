@@ -3,4 +3,10 @@
 	email = audrius.mecionis@gmail.com
 [core]
 	excludesfile = $HOME/.dotfiles/.gitignore
-	editor = vim
+    editor = vim
+[diff]
+    tool = vimdiff
+[difftool]
+    prompt = false
+[alias]
+    d = difftool

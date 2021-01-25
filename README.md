@@ -1,5 +1,5 @@
 # dotfiles
-Audrius minimalistic dotfiles
+My minimalistic dotfiles
 
 - Clone this repo
     ```
@@ -9,7 +9,8 @@ Audrius minimalistic dotfiles
 
 - Install needed packages
     ```
-    sudo apt install guake vim zsh code alacritty
+    sudo apt install zsh code alacritty guake
+    sudo apt install vim-gtk3 # for clipboard support
     ```
 
 - Install zsh plugin manager antibody
