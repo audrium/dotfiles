@@ -1,14 +1,13 @@
 {
-    "window.zoomLevel": 0,
     "workbench.iconTheme": "material-icon-theme",
     "python.formatting.provider": "black",
+    "python.formatting.blackPath": "/home/amecioni/.local/bin/black",
+    "python.autoComplete.extraPaths": ["./**"],
     "[javascript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "terminal.integrated.fontSize": 13,
-    "[python]": {
-        "editor.defaultFormatter": "ms-python.python"
-    },
+
     "[json]": {
         "editor.defaultFormatter": "vscode.json-language-features"
     },
@@ -18,16 +17,32 @@
     "cornflakes.linter.executablePath": "/home/amecioni/.virtualenvs/reana/lib/python3.8/site-packages/flake8",
     "files.trimTrailingWhitespace": true,
     "files.trimFinalNewlines": true,
-    "editor.fontSize": 13,
     "diffEditor.ignoreTrimWhitespace": false,
     "workbench.colorTheme": "Atom One Dark",
     "files.exclude": {
-        "**/node_modules/**": true
+        "**/node_modules/**": false
     },
-    "workbench.editorAssociations": [
-        {
-            "viewType": "jupyter.notebook.ipynb",
-            "filenamePattern": "*.ipynb"
-        }
-    ]
+    "workbench.editorAssociations": [],
+    "extensions.ignoreRecommendations": true,
+    "editor.fontSize": 13.5,
+    "editor.rulers": [80],
+    "[python]": {
+        "gitlens.codeLens.symbolScopes": [
+            "!Module"
+        ]
+    },
+    "vim.useSystemClipboard": true,
+    "vim.handleKeys": {
+        "<C-k>": false,
+        "<C-f>": false
+    },
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "python.languageServer": "Microsoft",
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
 }

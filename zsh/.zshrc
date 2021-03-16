@@ -13,11 +13,13 @@ antibody bundle mafredri/zsh-async
 antibody bundle sindresorhus/pure
 
 # aliases
-alias l="ls -lha --color"
-alias ll="ls -lh --color"
+alias ll="exa -l --icons --time-style=long-iso --group-directories-first"
+alias l="ll -a"
 alias python="/usr/bin/python3"
 alias rd="reana-dev"
 alias r="ranger"
+
+export EDITOR="gvim -v"
 
 # colors
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#00afff"
@@ -34,3 +36,11 @@ SAVEHIST=90000
 HISTTIMEFORMAT="[%F %T] "
 setopt INC_APPEND_HISTORY # immediate append
 setopt HIST_IGNORE_ALL_DUPS
+
+# use ripgrep in fzf
+if type rg &> /dev/null; then
+  export FZF_DEFAULT_COMMAND='rg --files'
+  export FZF_DEFAULT_OPTS='-m'
+fi
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

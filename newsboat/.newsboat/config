@@ -1,0 +1,11 @@
+auto-reload yes
+browser firefox
+text-width 80
+
+color info color108 default
+color listnormal color108 default
+color listnormal_unread color108 default bold
+color listfocus color108 default reverse
+color listfocus_unread color108 default bold reverse
+color article color252 black
+

@@ -13,6 +13,12 @@ My minimalistic dotfiles
     sudo apt install vim-gtk3 # for clipboard support
     ```
 
+- Other dependencies
+    ```
+    sudo apt install fzf ripgrep
+    # install nerd fonts
+    ```
+
 - Install zsh plugin manager antibody
     ```
     curl -sfL git.io/antibody | sudo sh -s - -b /usr/local/bin
