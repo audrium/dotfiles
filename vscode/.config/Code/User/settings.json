@@ -1,48 +1,68 @@
 {
-    "workbench.iconTheme": "material-icon-theme",
-    "python.formatting.provider": "black",
-    "python.formatting.blackPath": "/home/amecioni/.local/bin/black",
-    "python.autoComplete.extraPaths": ["./**"],
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "terminal.integrated.fontSize": 13,
-
-    "[json]": {
-        "editor.defaultFormatter": "vscode.json-language-features"
-    },
-    "[yaml]": {
-        "editor.defaultFormatter": "redhat.vscode-yaml"
-    },
-    "cornflakes.linter.executablePath": "/home/amecioni/.virtualenvs/reana/lib/python3.8/site-packages/flake8",
-    "files.trimTrailingWhitespace": true,
-    "files.trimFinalNewlines": true,
-    "diffEditor.ignoreTrimWhitespace": false,
-    "workbench.colorTheme": "Atom One Dark",
-    "files.exclude": {
-        "**/node_modules/**": false
-    },
-    "workbench.editorAssociations": [],
-    "extensions.ignoreRecommendations": true,
-    "editor.fontSize": 13.5,
-    "editor.rulers": [80],
-    "[python]": {
-        "gitlens.codeLens.symbolScopes": [
-            "!Module"
-        ]
-    },
-    "vim.useSystemClipboard": true,
-    "vim.handleKeys": {
-        "<C-k>": false,
-        "<C-f>": false
-    },
-    "[html]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "python.languageServer": "Microsoft",
-    "[jsonc]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "workbench.iconTheme": "material-icon-theme",
+  "python.formatting.provider": "black",
+  "python.formatting.blackPath": "/home/amecioni/.local/bin/black",
+  "python.autoComplete.extraPaths": ["./**"],
+  "python.languageServer": "Pylance",
+  "python.analysis.extraPaths": ["./**"],
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "cornflakes.linter.executablePath": "/home/amecioni/.local/bin/flake8",
+  "files.trimTrailingWhitespace": true,
+  "files.trimFinalNewlines": true,
+  "files.exclude": {
+    "**/node_modules/**": false
+  },
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
+  "extensions.ignoreRecommendations": true,
+  "terminal.integrated.fontSize": 13,
+  "editor.rulers": [80],
+  "editor.formatOnSave": false,
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
+  "code-runner.executorMap": {
+    "javascript": "node",
+    "python": "/usr/bin/python3"
+  },
+  "code-runner.clearPreviousOutput": true,
+  "tabnine.experimentalAutoImports": true,
+  "editor.fontSize": 11.5,
+  "workbench.colorCustomizations": {
+    "[GitHub Dark Dimmed]": {
+      "editor.background": "#282c34"
     }
+  },
+  "files.associations": {
+    "*.vim": "powershell"
+  },
+  "workbench.colorTheme": "GitHub Dark Dimmed",
+  "emeraldwalk.runonsave": {
+    "commands": [
+      {
+        "match": ".*",
+        "cmd": "/home/amecioni/Documents/notes/snippets/update_copyright.sh ${file}"
+      }
+    ]
+  },
+  "window.zoomLevel": 1
 }

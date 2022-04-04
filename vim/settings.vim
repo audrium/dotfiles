@@ -2,9 +2,10 @@ filetype plugin indent on
 
 " Set color theme
 syntax on
-colorscheme seoul256
-    hi Title ctermfg=65
-    hi Underlined ctermfg=108
+
+" Use the terminal background color for onedark theme
+autocmd ColorScheme * call onedark#set_highlight("Normal", { "fg": { "gui": "#ABB2BF", "cterm": "145", "cterm16" : "7" } })
+colorscheme onedark
 
 " Start NERDTree when Vim is started without file arguments.
 autocmd StdinReadPre * let s:std_in=1
@@ -13,19 +14,19 @@ autocmd VimEnter * if argc() == 0 && !exists('s:std_in') | NERDTree | endif
 " Exit Vim if NERDTree is the only window left.
 autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
 
-" Set lightline to include git-branch
-let g:lightline = {
-      \ 'colorscheme': 'wombat',
-      \ 'active': {
-      \   'left': [ [ 'mode', 'paste' ],
-      \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ,
-      \             [ 'venv', 'readonly'] ]
-      \ },
-      \ 'component_function': {
-      \   'gitbranch': 'fugitive#head',
-      \   'venv': 'virtualenv#statusline'
-      \ },
-      \ }
+" Set lightline
+autocmd VimEnter * call SetupLightlineColors()
+function SetupLightlineColors() abort
+  " transparent background in statusbar
+  let l:palette = lightline#palette()
+
+  let l:palette.normal.middle = [ [ 'NONE', 'NONE', 'NONE', 'NONE' ] ]
+  let l:palette.inactive.middle = l:palette.normal.middle
+  let l:palette.tabline.middle = l:palette.normal.middle
+
+  call lightline#colorscheme()
+endfunction
+let g:lightline = {'colorscheme': 'onedark'}
 
 set hidden
 
@@ -72,4 +73,3 @@ au FileType python let b:AutoPairs = AutoPairsDefine({"f'" : "'", "r'" : "'", "b
 " Mouse
 set ttymouse=xterm2
 set mouse=a
-

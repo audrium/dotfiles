@@ -10,3 +10,5 @@
     prompt = false
 [alias]
     d = difftool
+[remote "upstream"]
+    fetch = +refs/pull/*/head:refs/remotes/upstream/pr/*

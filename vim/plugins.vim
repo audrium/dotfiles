@@ -18,6 +18,7 @@ Plug 'tpope/vim-sensible'
 
 " Color theme
 Plug 'tomasiser/vim-code-dark'
+Plug 'joshdick/onedark.vim'
 Plug 'junegunn/seoul256.vim'
     let g:seoul256_background = 235
 
@@ -105,4 +106,3 @@ Plug 'sheerun/vim-polyglot'
     "let g:ale_sign_warning = '⚠️'
 
 call plug#end()
-
