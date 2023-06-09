@@ -19,6 +19,7 @@ Plug 'tpope/vim-sensible'
 " Color theme
 Plug 'tomasiser/vim-code-dark'
 Plug 'joshdick/onedark.vim'
+Plug 'morhetz/gruvbox'
 Plug 'junegunn/seoul256.vim'
     let g:seoul256_background = 235
 

@@ -12,13 +12,17 @@ antibody bundle lukechilds/zsh-nvm
 antibody bundle mafredri/zsh-async
 antibody bundle sindresorhus/pure
 
+set term=xterm-256color
+
 # aliases
-alias ll="exa -l --icons --time-style=long-iso --group-directories-first"
+alias ll="exa -l --icons --time-style=long-iso --group-directories-first --no-permissions"
 alias l="ll -a"
 alias python="/usr/bin/python3"
 alias k="kubectl"
 alias r="ranger"
-alias cat="batcat"
+alias cat="bat --theme=gruvbox-dark"
+alias cal="khal calendar"
+alias rm="rm -iv"
 
 # git aliases
 alias gs="git status"
@@ -38,7 +42,7 @@ alias kubectl-delete-job-batches="kubectl delete jobs --all --cascade=false"
 export EDITOR="gvim -v"
 
 # colors
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#00afff"
+# ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#00afff"
 
 # virtualenv wrapper
 export WORKON_HOME=$HOME/.virtualenvs

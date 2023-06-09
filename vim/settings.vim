@@ -4,8 +4,11 @@ filetype plugin indent on
 syntax on
 
 " Use the terminal background color for onedark theme
-autocmd ColorScheme * call onedark#set_highlight("Normal", { "fg": { "gui": "#ABB2BF", "cterm": "145", "cterm16" : "7" } })
-colorscheme onedark
+" autocmd ColorScheme * call onedark#set_highlight("Normal", { "fg": { "gui": "#ABB2BF", "cterm": "145", "cterm16" : "7" } })
+" colorscheme onedark
+set bg=dark
+" let g:gruvbox_contrast_dark='soft'
+colorscheme gruvbox
 
 " Start NERDTree when Vim is started without file arguments.
 autocmd StdinReadPre * let s:std_in=1
@@ -26,7 +29,8 @@ function SetupLightlineColors() abort
 
   call lightline#colorscheme()
 endfunction
-let g:lightline = {'colorscheme': 'onedark'}
+let g:lightline = {'colorscheme': 'gruvbox'}
+"let g:lightline = {'colorscheme': 'onedark'}
 
 set hidden
 
