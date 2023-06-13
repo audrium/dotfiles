@@ -1,7 +1,7 @@
 {
   "workbench.iconTheme": "material-icon-theme",
   "python.formatting.provider": "black",
-  "python.formatting.blackPath": "/home/amecioni/.local/bin/black",
+  "python.formatting.blackPath": "/usr/local/bin/black",
   "python.autoComplete.extraPaths": ["./**"],
   "python.languageServer": "Pylance",
   "python.analysis.extraPaths": ["./**"],
@@ -20,6 +20,10 @@
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "go.formatTool": "golines",
+  "gopls": {
+    "experimentalWorkspaceModule": true
+  },
   "cornflakes.linter.executablePath": "/home/amecioni/.local/bin/flake8",
   "files.trimTrailingWhitespace": true,
   "files.trimFinalNewlines": true,
@@ -32,7 +36,7 @@
   "extensions.ignoreRecommendations": true,
   "terminal.integrated.fontSize": 13,
   "editor.rulers": [80],
-  "editor.formatOnSave": false,
+  "editor.formatOnSave": true,
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "diffEditor.ignoreTrimWhitespace": false,
@@ -46,7 +50,8 @@
   },
   "code-runner.clearPreviousOutput": true,
   "tabnine.experimentalAutoImports": true,
-  "editor.fontSize": 11.5,
+  "editor.fontSize": 13,
+  "editor.fontFamily": "'Droid Sans Mono', 'monospace', monospace",
   "workbench.colorCustomizations": {
     "[GitHub Dark Dimmed]": {
       "editor.background": "#282c34"
@@ -55,14 +60,25 @@
   "files.associations": {
     "*.vim": "powershell"
   },
-  "workbench.colorTheme": "GitHub Dark Dimmed",
+  "workbench.colorTheme": "Gruvbox Dark (Medium)",
   "emeraldwalk.runonsave": {
     "commands": [
       {
         "match": ".*",
-        "cmd": "/home/amecioni/Documents/notes/snippets/update_copyright.sh ${file}"
+        "cmd": "/home/amecioni/Documents/notes/snippets/update_copyright2.sh ${file}"
       }
     ]
   },
+  "[markdown]": {
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+  },
+  "githubPullRequests.queries": [
+    {
+      "label": "Waiting For My Review",
+      "query": "is:open review-requested:${user}"
+    }
+  ],
+  "editor.minimap.enabled": false,
   "window.zoomLevel": 1
 }
+

@@ -2,6 +2,8 @@
 # cat vscode_extensions | xargs -L 1 code --install-extension
 akamud.vscode-theme-onedark
 almenon.arepl
+azemoh.one-monokai
+bungcip.better-toml
 dbaeumer.vscode-eslint
 eamodio.gitlens
 emeraldwalk.RunOnSave
@@ -11,13 +13,17 @@ firefox-devtools.vscode-firefox-debug
 formulahendry.code-runner
 freakypie.code-python-isort
 GitHub.github-vscode-theme
+GitHub.vscode-pull-request-github
+golang.go
 Hyzeta.vscode-theme-github-light
+jdinhlife.gruvbox
 kevinglasson.cornflakes-linter
 kiteco.kite
 lextudio.restructuredtext
 mikestead.dotenv
 ms-azuretools.vscode-docker
 ms-kubernetes-tools.vscode-kubernetes-tools
+ms-python.isort
 ms-python.python
 ms-python.vscode-pylance
 ms-vscode-remote.remote-containers
@@ -26,6 +32,7 @@ njpwerner.autodocstring
 PKief.material-icon-theme
 redhat.vscode-yaml
 TabNine.tabnine-vscode
+TakumiI.markdowntable
 tomphilbin.gruvbox-themes
 treetrum.statusbar-format-on-save
 trond-snekvik.simple-rst
@@ -36,3 +43,4 @@ wayou.vscode-todo-highlight
 yzhang.markdown-all-in-one
 zapu.vscode-aspell
 zhuangtongfa.material-theme
+
